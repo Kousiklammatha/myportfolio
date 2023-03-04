@@ -1,0 +1,184 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000;
+    color: white;
+}
+.top-container h1{
+    margin-left: 7%;
+    margin-top: 3%;
+    font-size: 28px;
+    font-family: 'Tilt Prism', cursive;
+    letter-spacing: 10px;
+}
+nav li {
+    display: inline;
+    list-style: none;
+    word-spacing: 1px;
+}
+a{
+   text-decoration: none;
+   color: white;
+   display: inline-block; 
+   word-spacing: 20px;
+}
+nav{
+    word-spacing: 18px;
+    font-size: 20px;
+    text-align: right;
+    margin-right: 5%;
+}
+nav li a:hover{
+    border-radius: 2px;
+    padding: 2px 5px 2px 5px;
+    box-shadow: 1px 1px 5px 2px rgb(222, 31, 31);
+    background-color: rgb(222, 31, 31);
+    transition: 0.7s;
+    color: white;
+    cursor: pointer;
+}
+.details{
+      margin-top: 10%;
+      width: 70%;
+      height: 30%;
+      line-height: 58px;
+}
+.details h3{
+    margin-left: 15%;
+    font-weight: lighter;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    margin-bottom: 1%;
+    margin-top: 1.5%;
+}
+.details h1{
+    margin-top: 0%;
+    margin-left: 15%;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: 'Inter', sans-serif;
+}
+.btn button{
+    position: relative;
+    top: -590px;
+    left: 164px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    background-color:#585656d1;
+    color: rgb(255, 255, 255);
+    width: 110%;
+    border: 0px;
+    padding: 2px 5px 2px 5px;
+}
+.details img{
+    position: relative;
+    left: 900px;
+    top: -270px;
+}
+.btn button:hover{
+    box-shadow: 1px 1px 5px 2px rgb(222, 31, 31);
+    background-color: rgb(222, 31, 31);
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+}
+.heading h1{
+    margin-top: 10%;
+    margin-left: 20%;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    color: rgb(255, 187, 0);
+    font-size: 50px;
+    font-family: 'Inter Tight', sans-serif;
+}
+.det p{
+    margin-top: 3%;
+    width: 36%;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    text-align:justify;
+    margin-left: 20%;
+    letter-spacing: 2px;
+    line-height: 37px;
+}
+.det button{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    font-size: 18px;
+    border: none;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    background-color:#585656d1;
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 30px;
+}
+.i img{
+    margin-left: 60%;
+    margin-top: -30%;
+    height: 420px;
+}
+.det button:hover{
+    box-shadow: 1px 1px 5px 2px rgb(222, 31, 31);
+    background-color: rgb(222, 31, 31);
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+}
+.contact-form{
+    margin-top: -7%;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    position: relative;
+    left: 45%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form h3{
+    color: rgb(255, 255, 0);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+form input,form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 30px;
+    outline: none;
+    background-color: rgb(211, 211, 25);
+    font-size: 18px;
+}
+.contact-form button{
+    padding:20px;
+    font-size: 18px;
+    box-shadow: 1px 1px 5px 2px rgb(222, 31, 31);
+    background-color: rgb(222, 31, 31);
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+    align-items: center;
+    position: relative;
+    margin-top: 2%;
+    left: 35%;
+    border-radius: 30px;
+}

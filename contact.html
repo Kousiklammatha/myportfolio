@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+    <meta charset="UTF-8">
+    <title>Kousik Lammatha</title>
+    <link rel="stylesheet" href="koushik.css" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section>
+        <div class="top-container">
+            <h1>MY PORTFOLIO</h1>
+            <div class="nav">
+                <nav>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="My Resume.pdf">Resume</a></li>
+                    <li><a href="aboutme.html">AboutMe</a></li>
+                    <li><a href="contact.html">ContactMe</a></li>
+                </nav>
+            </div>
+          </div>
+         <div class="contact-form">
+             <form method="post">
+              <h3>Contact Me</h3>
+              <input type="text" name="name" id="yourname" placeholder="Enter Your Name/ Company Name" required>
+              <input type="email" name="email" id="email" placeholder="Enter Your Email-Id" required>
+              <input type="number" name="number" id="number" placeholder="Enter Your Mobile Number" required>
+              <input type="textarea" rows="4"name="message" id="message" placeholder="Enter your message" required>
+              <button type="submit" onclick="sendmail()">Send</button>
+             </form>
+         </div> 
+
+         <script type="text/javascript">
+          function sendmail()
+          {
+            Email.send({
+              Host : "smtp.elasticemail.com",
+            Username : "techintelugukr@gmail.com",
+            Password : "Kousik.job@1.5cr",
+            To : 'kousiklammatha.jobmail@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "Job Alert!",
+            Body : "Name: "+document.getElementById("name").value+"<br> Email: "+ document.getElementById("email").value+"<br>Number: "+ document.getElementById("number").value+
+            "<br>Message: "+document.getElementById("message").value
+            }).then(
+            message => alert("Message Sent Succesfully")
+            );
+          }
+        </script>
+    </section>
+</body>
+</html>
